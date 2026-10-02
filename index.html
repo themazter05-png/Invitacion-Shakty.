@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07131f">
+<title>Una aventura te espera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pirata+One&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="opening" class="opening">
+  <div class="stars"></div>
+  <div class="rope rope-a"></div><div class="rope rope-b"></div>
+  <div class="compass-big">✦</div>
+  <p class="opening-kicker">UN MENSAJE HA LLEGADO</p>
+  <h1>PREPÁRATE<br><span>PARA ZARPAR</span></h1>
+  <p class="opening-copy">Una nueva aventura está a punto de comenzar.</p>
+  <button id="openInvite" class="gold-btn">⚓ ABRIR INVITACIÓN</button>
+  <p class="tap-note">Toca para abrir el mapa</p>
+</div>
+
+<div id="mapReveal" class="map-reveal hidden">
+  <div class="map-paper">
+    <div class="map-lines"></div>
+    <div class="route"></div>
+    <div class="island island-1">☠</div><div class="island island-2">✦</div>
+    <div class="map-title">RUTA DE LA AVENTURA</div>
+    <div class="map-ship">⛵</div>
+    <button id="continueBtn" class="dark-btn">SEGUIR LA RUTA →</button>
+  </div>
+</div>
+
+<div id="site" class="site hidden">
+<header class="hero">
+  <button id="musicBtn" class="music">♫</button>
+  <div class="floating coin coin1">●</div><div class="floating coin coin2">●</div>
+  <p class="kicker">⚓ CARTA DE INVITACIÓN ⚓</p>
+  <div class="wanted">
+    <div class="wanted-top">WANTED</div>
+    <img src="assets/images/portada.jpg" alt="Foto principal">
+    <div class="wanted-name" id="heroName">TU NOMBRE</div>
+    <div class="wanted-sub">POR UNA NOCHE INOLVIDABLE</div>
+    <div class="wanted-age"><span>EDICIÓN</span> <b id="heroAge">00</b></div>
+  </div>
+  <h2 class="hero-title">UNA AVENTURA<br><span>TE ESPERA</span></h2>
+  <p class="hero-copy" id="heroCopy">Hay celebraciones que merecen su propia historia.</p>
+  <a href="#invitation" class="anchor">DESCUBRIR LA HISTORIA ↓</a>
+</header>
+
+<main>
+<section id="invitation" class="section letter">
+  <div class="wax">⚓</div>
+  <p class="small-label">QUERIDA TRIPULACIÓN</p>
+  <h2>ESTÁS INVITADO</h2>
+  <p id="letterText">Este barco está listo para una celebración especial. Guarda la fecha, reúne a la tripulación y ven a compartir una noche llena de música, comida y aventuras.</p>
+  <div class="signature">— EL CAPITÁN</div>
+</section>
+
+<section class="section countdown">
+  <p class="small-label">EL VIAJE COMIENZA EN</p>
+  <div class="timer">
+    <div><b id="days">00</b><span>DÍAS</span></div>
+    <div><b id="hours">00</b><span>HORAS</span></div>
+    <div><b id="minutes">00</b><span>MIN</span></div>
+    <div><b id="seconds">00</b><span>SEG</span></div>
+  </div>
+  <p id="timerMessage">Prepara tu bandera...</p>
+</section>
+
+<section class="section event">
+  <p class="small-label">DATOS DE LA MISIÓN</p>
+  <h2>MARCA EL RUMBO</h2>
+  <div class="event-board">
+    <div><span>📅</span><small>FECHA</small><b id="dateText">20 DE DICIEMBRE DE 2026</b></div>
+    <div><span>⏰</span><small>HORA</small><b id="timeText">8:00 PM</b></div>
+    <div><span>⚓</span><small>LUGAR</small><b id="placeText">EL GALEÓN</b></div>
+    <div><span>🗺️</span><small>DIRECCIÓN</small><b id="addressText">DIRECCIÓN</b></div>
+  </div>
+  <a id="mapBtn" class="gold-btn inline" href="#" target="_blank" rel="noopener">🗺️ VER UBICACIÓN</a>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-head"><span>RECUERDOS</span><h2>DEL VIAJE</h2></div>
+  <div class="gallery">
+    <img src="assets/images/foto1.jpg" alt="Recuerdo 1"><img src="assets/images/foto2.jpg" alt="Recuerdo 2"><img src="assets/images/foto3.jpg" alt="Recuerdo 3">
+  </div>
+</section>
+
+<section class="section rsvp">
+  <div class="skull">☠</div>
+  <p class="small-label">ÚLTIMA PARADA</p>
+  <h2>¿TE UNES?</h2>
+  <p>Confirma tu asistencia y asegura tu lugar a bordo.</p>
+  <a id="whatsappBtn" class="red-btn" href="#" target="_blank" rel="noopener">💬 CONFIRMAR ASISTENCIA</a>
+</section>
+</main>
+
+<footer>
+  <div>⚓ ☠ ⚓</div>
+  <p>QUE COMIENCE LA AVENTURA</p>
+  <small>Una invitación hecha para compartir.</small>
+</footer>
+<audio id="music" loop preload="none"><source src="assets/audio/musica.mp3" type="audio/mpeg"></audio>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
